@@ -9,7 +9,20 @@
 
 void exercicio01() 
 {
-    //....//
+    int valor1, valor2;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &valor2);
+
+    int subtracao = 0;
+
+    subtracao = valor2 - valor1;
+
+    printf("O valor da subtracao eh de %d", subtracao);
+
 }
 
 void exercicio02() 
@@ -23,7 +36,7 @@ int main() {
     int op;
 
     do {
-        printf("\nEscolha o número do exercício: ");
+        printf("\nEscolha o numero do exercicio: ");
         scanf("%d", &op);
 
         switch (op) {
