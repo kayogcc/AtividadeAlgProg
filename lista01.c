@@ -1,6 +1,6 @@
 // LISTA DE EXERCÍCIOS 01 - Entrada, Saída e Operadores em C
 // Alunos: RA: 25022660 - Kayo Gabriel Casatti Camargo
-// Alunos: RA:  - Yago Campos Neves
+// Alunos: RA:  - Yago de Campos Neves
 
 
 #include <stdio.h>
@@ -9,8 +9,7 @@
 
 void exercicio01() 
 {
-    printf("\nExercício 01:\n\n");
-    printf("Hello World!\n");
+    //....//
 }
 
 void exercicio02() 
