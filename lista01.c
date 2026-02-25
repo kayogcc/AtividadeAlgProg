@@ -1,6 +1,7 @@
 // LISTA DE EXERCÍCIOS 01 - Entrada, Saída e Operadores em C
 // Alunos: RA: 25022660 - Kayo Gabriel Casatti Camargo
 // Alunos: RA:  - Yago de Campos Neves
+// Alunos: RA:  - Guilherme MOntoro Antolinez
 
 
 #include <stdio.h>
@@ -23,6 +24,7 @@ void exercicio01()
 
     printf("O valor da subtracao eh de %d", subtracao);
 
+    return 0;
 }
 
 void exercicio02() 
@@ -42,7 +44,9 @@ void exercicio02()
 
     multiplicacao = numero1 * numero2 * numero3;
 
-    printf("O valor da multiplicacao eh %d", multiplicacao);    
+    printf("O valor da multiplicacao eh %d", multiplicacao); 
+    
+    return 0;
 }
 
 void exercicio03() 
@@ -58,25 +62,71 @@ void exercicio03()
     media = ((nota1 * 2) + (nota2*3)) / 5;
 
     printf("A media eh: %.2f ", media);
+    
+    return 0;
 }
 
 void exercicio04()
 {
+    float preco_produto, valor;
 
+    printf("Digite o preco do produto: ");
+    scanf("%f", &preco_produto);
+
+    valor = preco_produto * 0.9;
+
+    printf("O preco do produto apos o desconto eh de: %.2f\n", valor);
+
+    return 0;
 }
 
 void exercicio05()
 {
+    float salario, salario_final, vendas, comissao;
+    
+    printf("Digite o salario: ");
+    scanf("%f", &salario);
 
+    printf("Digite o valor total das vendas: ");
+    scanf("%f", &vendas);
+
+    comissao = vendas * 0.04;
+
+    salario_final = comissao +salario;
+
+    printf("O salario final apos a comissao eh de: %.2f", salario_final);
+
+    return 0;
 }
 
 void exercicio06()
 {
+    float peso_kg, peso_g;
 
+    printf("DIgite o valor em kilogramas: ");
+    scanf("%f", &peso_kg);
+
+    peso_g = (peso_kg * 1000);
+
+    printf("O peso tranformado em gramas eh: %.2f", peso_g);
+
+    return 0;
 }
 
 void exercicio07()
 {
+    float peso, peso_engordar, peso_emagrecer;
+
+    printf("Digite seu peso: ");
+    scanf("%f", &peso);
+
+    peso_engordar = peso + (peso * 0.15);
+    peso_emagrecer = peso - (peso * 0.20);
+
+    printf("Seu peso se engordar : %f\n", peso_engordar);
+    printf("Seu peso se emagrecer: %f\n", peso_emagrecer);
+
+    return 0;
 
 }
 
@@ -85,115 +135,115 @@ void exercicio08()
 
 }
 
-void exercicio09()
-{
+// void exercicio09()
+// {
 
-}
+// }
 
-void exercicio10()
-{
+// void exercicio10()
+// {
 
-}
+// }
 
-void exercicio11()
-{
+// void exercicio11()
+// {
 
-}
+// }
 
-void exercicio12()
-{
+// void exercicio12()
+// {
 
-}
+// }
 
-void exercicio13()
-{
+// void exercicio13()
+// {
 
-}
+// }
 
-void exercicio14()
-{
+// void exercicio14()
+// {
 
-}
+// }
 
-void exercicio15()
-{
+// void exercicio15()
+// {
 
-}
+// }
 
-void exercicio16()
-{
+// void exercicio16()
+// {
 
-}
+// }
 
-void exercicio17()
-{
+// void exercicio17()
+// {
 
-}
+// }
 
-void exercicio18()
-{
+// void exercicio18()
+// {
 
-}
+// }
 
-void exercicio19()
-{
+// void exercicio19()
+// {
 
-}
+// }
 
-void exercicio20()
-{
+// void exercicio20()
+// {
 
-}
+// }
 
-void exercicio21()
-{
+// void exercicio21()
+// {
 
-}
+// }
 
-void exercicio22()
-{
+// void exercicio22()
+// {
 
-}
+// }
 
-void exercicio23()
-{
+// void exercicio23()
+// {
 
-}
+// }
 
-void exercicio24()
-{
+// void exercicio24()
+// {
 
-}
+// }
 
-void exercicio25()
-{
+// void exercicio25()
+// {
 
-}
+// }
 
-void exercicio26()
-{
+// void exercicio26()
+// {
 
-}
+// }
 
-void exercicio27()
-{
+// void exercicio27()
+// {
 
-}
+// }
 
-void exercicio28()
-{
+// void exercicio28()
+// {
 
-}
+// }
 
-void exercicio29()
-{
+// void exercicio29()
+// {
 
-}
+// }
 
-void exercicio30()
-{
+// void exercicio30()
+// {
 
-}
+// }
 
 
 int main() {
@@ -208,33 +258,33 @@ int main() {
             case 1: exercicio01(); break;
             case 2: exercicio02(); break;
             case 3: exercicio03(); break;
-            case 4: exercicio03(); break;
-            case 5: exercicio03(); break;
-            case 6: exercicio03(); break;
-            case 7: exercicio03(); break;
-            case 8: exercicio03(); break;
-            case 9: exercicio03(); break;
-            case 10: exercicio03(); break;
-            case 11: exercicio03(); break;
-            case 12: exercicio03(); break;
-            case 13: exercicio03(); break;
-            case 14: exercicio03(); break;
-            case 15: exercicio03(); break;
-            case 16: exercicio03(); break;
-            case 17: exercicio03(); break;
-            case 18: exercicio03(); break;
-            case 19: exercicio03(); break;
-            case 20: exercicio03(); break;
-            case 21: exercicio03(); break;
-            case 22: exercicio03(); break;
-            case 23: exercicio03(); break;
-            case 24: exercicio03(); break;
-            case 25: exercicio03(); break;
-            case 26: exercicio03(); break;
-            case 27: exercicio03(); break;
-            case 28: exercicio03(); break;
-            case 29: exercicio03(); break;
-            case 30: exercicio03(); break;
+            case 4: exercicio04(); break;
+            case 5: exercicio05(); break;
+            case 6: exercicio06(); break;
+            case 7: exercicio07(); break;
+            // case 8: exercicio03(); break;
+            // case 9: exercicio03(); break;
+            // case 10: exercicio03(); break;
+            // case 11: exercicio03(); break;
+            // case 12: exercicio03(); break;
+            // case 13: exercicio03(); break;
+            // case 14: exercicio03(); break;
+            // case 15: exercicio03(); break;
+            // case 16: exercicio03(); break;
+            // case 17: exercicio03(); break;
+            // case 18: exercicio03(); break;
+            // case 19: exercicio03(); break;
+            // case 20: exercicio03(); break;
+            // case 21: exercicio03(); break;
+            // case 22: exercicio03(); break;
+            // case 23: exercicio03(); break;
+            // case 24: exercicio03(); break;
+            // case 25: exercicio03(); break;
+            // case 26: exercicio03(); break;
+            // case 27: exercicio03(); break;
+            // case 28: exercicio03(); break;
+            // case 29: exercicio03(); break;
+            // case 30: exercicio03(); break;
         }
     } while (op != 0);
 
