@@ -10,7 +10,7 @@
 
 void exercicio01() 
 {
-    int valor1, valor2;
+    int valor1, valor2, subtracao;
 
     printf("Digite o primeiro valor: ");
     scanf("%d", &valor1);
@@ -18,13 +18,9 @@ void exercicio01()
     printf("Digite o segundo valor: ");
     scanf("%d", &valor2);
 
-    int subtracao = 0;
-
     subtracao = valor2 - valor1;
 
-    printf("O valor da subtracao eh de %d", subtracao);
-
-    return 0;
+    printf("O valor da subtracao eh de %d \n", subtracao);
 }
 
 void exercicio02() 
@@ -44,9 +40,7 @@ void exercicio02()
 
     multiplicacao = numero1 * numero2 * numero3;
 
-    printf("O valor da multiplicacao eh %d", multiplicacao); 
-    
-    return 0;
+    printf("O valor da multiplicacao eh %d \n", multiplicacao); 
 }
 
 void exercicio03() 
@@ -61,9 +55,7 @@ void exercicio03()
 
     media = ((nota1 * 2) + (nota2*3)) / 5;
 
-    printf("A media eh: %.2f ", media);
-    
-    return 0;
+    printf("A media eh: %.2f \n", media);
 }
 
 void exercicio04()
@@ -75,9 +67,7 @@ void exercicio04()
 
     valor = preco_produto * 0.9;
 
-    printf("O preco do produto apos o desconto eh de: %.2f\n", valor);
-
-    return 0;
+    printf("O preco do produto apos o desconto eh de: %.2f \n", valor);
 }
 
 void exercicio05()
@@ -94,9 +84,7 @@ void exercicio05()
 
     salario_final = comissao +salario;
 
-    printf("O salario final apos a comissao eh de: %.2f", salario_final);
-
-    return 0;
+    printf("O salario final apos a comissao eh de: %.2f \n", salario_final); 
 }
 
 void exercicio06()
@@ -108,9 +96,7 @@ void exercicio06()
 
     peso_g = (peso_kg * 1000);
 
-    printf("O peso tranformado em gramas eh: %.2f", peso_g);
-
-    return 0;
+    printf("O peso tranformado em gramas eh: %.2f \n", peso_g);
 }
 
 void exercicio07()
@@ -123,37 +109,83 @@ void exercicio07()
     peso_engordar = peso + (peso * 0.15);
     peso_emagrecer = peso - (peso * 0.20);
 
-    printf("Seu peso se engordar : %f\n", peso_engordar);
-    printf("Seu peso se emagrecer: %f\n", peso_emagrecer);
-
-    return 0;
-
+    printf("Seu peso se engordar : %.2f \n", peso_engordar);
+    printf("Seu peso se emagrecer: %.2f \n", peso_emagrecer);
 }
 
 void exercicio08()
 {
+    float base_maior, base_menor, altura, area;
 
+    printf("DIgite a base maior do triangulo: ");
+    scanf("%f", &base_maior);
+
+    printf("DIgite a base menor do triangulo: ");
+    scanf("%f", &base_menor);
+
+    printf("DIgite a altura do triangulo: ");
+    scanf("%f", &altura);
+
+    area = (((base_maior + base_menor) * altura) / 2);
+
+    printf("A area do triangulo eh: %.2f \n", area);
 }
 
-// void exercicio09()
-// {
+void exercicio09()
+{
+    float lado, area;
 
-// }
+    printf("Digite o lado do quadrado: ");
+    scanf("%f", &lado);
 
-// void exercicio10()
-// {
+    area = lado * lado;
 
-// }
+    printf("A area do quadrado eh: %.2f \n", area);
+}
 
-// void exercicio11()
-// {
+void exercicio10()
+{
+    float diagonal_maior, diagonal_menor, area;
 
-// }
+    printf("Digite a diagonal maior do losango: ");
+    scanf("%f", &diagonal_maior);
 
-// void exercicio12()
-// {
+    printf("Digite a diagonal menor do losango: ");
+    scanf("%f", &diagonal_menor);
 
-// }
+    area = ((diagonal_maior*diagonal_menor) / 2);
+
+    printf("A area do losango eh de: %.2f \n", area);
+}
+
+void exercicio11()
+{
+    float salario_minimo, salario;
+    int calculo;
+
+    printf("Digite o valor do salario minimo atualmente: ");
+    scanf("%f",&salario_minimo);
+
+    printf("Digite o valor do salario: ");
+    scanf("%f",&salario);
+
+    calculo = (salario / salario_minimo);
+
+    printf("Voce recebe %i salarios minimos \n", calculo);
+}
+
+void exercicio12()
+{
+    int numero, i;
+
+    printf("Digite o numero para fazer a tabuada dele: ");
+    scanf("%d", &numero);
+
+    for (i = 1; i <= 10; i++)
+    {
+        printf("%d * %d = %d\n", numero, i, numero * i);
+    }
+}  
 
 // void exercicio13()
 // {
@@ -262,29 +294,29 @@ int main() {
             case 5: exercicio05(); break;
             case 6: exercicio06(); break;
             case 7: exercicio07(); break;
-            // case 8: exercicio03(); break;
-            // case 9: exercicio03(); break;
-            // case 10: exercicio03(); break;
-            // case 11: exercicio03(); break;
-            // case 12: exercicio03(); break;
-            // case 13: exercicio03(); break;
-            // case 14: exercicio03(); break;
-            // case 15: exercicio03(); break;
-            // case 16: exercicio03(); break;
-            // case 17: exercicio03(); break;
-            // case 18: exercicio03(); break;
-            // case 19: exercicio03(); break;
-            // case 20: exercicio03(); break;
-            // case 21: exercicio03(); break;
-            // case 22: exercicio03(); break;
-            // case 23: exercicio03(); break;
-            // case 24: exercicio03(); break;
-            // case 25: exercicio03(); break;
-            // case 26: exercicio03(); break;
-            // case 27: exercicio03(); break;
-            // case 28: exercicio03(); break;
-            // case 29: exercicio03(); break;
-            // case 30: exercicio03(); break;
+            case 8: exercicio08(); break;
+            case 9: exercicio09(); break;
+            case 10: exercicio10(); break;
+            case 11: exercicio11(); break;
+            case 12: exercicio12(); break;
+            // case 13: exercicio13(); break;
+            // case 14: exercicio14(); break;
+            // case 15: exercicio15(); break;
+            // case 16: exercicio16(); break;
+            // case 17: exercicio17(); break;
+            // case 18: exercicio18(); break;
+            // case 19: exercicio19(); break;
+            // case 20: exercicio20(); break;
+            // case 21: exercicio21(); break;
+            // case 22: exercicio22(); break;
+            // case 23: exercicio23(); break;
+            // case 24: exercicio24(); break;
+            // case 25: exercicio25(); break;
+            // case 26: exercicio26(); break;
+            // case 27: exercicio27(); break;
+            // case 28: exercicio28(); break;
+            // case 29: exercicio29(); break;
+            // case 30: exercicio30(); break;
         }
     } while (op != 0);
 
