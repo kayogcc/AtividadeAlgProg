@@ -187,20 +187,57 @@ void exercicio12()
     }
 }  
 
-// void exercicio13()
-// {
+void exercicio13()
+{
+    int anoNascimento, anoAtual;
+    int idadeAnos, idadeMeses, idadeSemanas, idadeDias;
 
-// }
+    printf("Digite o ano de nascimento: ");
+    scanf("%d", &anoNascimento);
 
-// void exercicio14()
-// {
+    printf("Digite o ano atual: ");
+    scanf("%d", &anoAtual);
 
-// }
+    idadeAnos = anoAtual - anoNascimento;
 
-// void exercicio15()
-// {
+    idadeMeses = idadeAnos * 12;
+    idadeSemanas = idadeAnos * 52;
+    idadeDias = idadeAnos * 365;
 
-// }
+    printf("\nIdade aproximada:\n");
+    printf("Anos: %d\n", idadeAnos);
+    printf("Meses: %d\n", idadeMeses);
+    printf("Semanas: %d\n", idadeSemanas);
+    printf("Dias: %d\n", idadeDias);
+}
+
+void exercicio14()
+{
+    float valorReais, valorReajuste;
+
+    printf("Digite o valor em reais: ");
+    scanf("%f", &valorReais);
+
+    valorReajuste = valorReais * 1.12;
+
+    printf("O valor apos o reajuste eh de R$ %.2f \n", valorReajuste);
+}
+
+void exercicio15()
+{
+    int pizzasConsumidas, fatiasSobradas;
+    int fatiasConsumidas;
+
+    printf("Digite quantas fatias de pizza foram consumidas: ");
+    scanf("%d", &fatiasConsumidas);
+
+    pizzasConsumidas = fatiasConsumidas / 8;
+    fatiasSobradas = fatiasConsumidas % 8;
+
+    printf("Pizzas consumidas: %d \n", pizzasConsumidas);
+    printf("Fatias sobradas: %d \n", fatiasSobradas);
+
+}
 
 // void exercicio16()
 // {
@@ -299,9 +336,9 @@ int main() {
             case 10: exercicio10(); break;
             case 11: exercicio11(); break;
             case 12: exercicio12(); break;
-            // case 13: exercicio13(); break;
-            // case 14: exercicio14(); break;
-            // case 15: exercicio15(); break;
+            case 13: exercicio13(); break;
+            case 14: exercicio14(); break;
+            case 15: exercicio15(); break;
             // case 16: exercicio16(); break;
             // case 17: exercicio17(); break;
             // case 18: exercicio18(); break;
