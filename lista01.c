@@ -239,45 +239,93 @@ void exercicio15()
 
 }
 
-// void exercicio16()
-// {
+void exercicio16() {
+    int a, b;
+    printf("\nExercicio 16\n");
+    printf("Digite dois numeros inteiros: ");
+    scanf("%d %d", &a, &b);
 
-// }
+    printf("Quociente: %d\n", a / b);
+    printf("Resto: %d\n", a % b);
+}
 
-// void exercicio17()
-// {
+void exercicio17() {
+    float f, c;
+    printf("\nExercicio 17\n");
+    printf("Digite a temperatura em Fahrenheit: ");
+    scanf("%f", &f);
 
-// }
+    c = (f - 32) / 1.8;
+    printf("Temperatura em Celsius: %.2f\n", c);
+}
 
-// void exercicio18()
-// {
+void exercicio18() {
+    float raio, area, comprimento;
+    float pi = 3.14159;
 
-// }
+    printf("\nExercicio 18\n");
+    printf("Digite o raio: ");
+    scanf("%f", &raio);
 
-// void exercicio19()
-// {
+    area = pi * raio * raio;
+    comprimento = 2 * pi * raio;
 
-// }
+    printf("Area: %.2f\n", area);
+    printf("Comprimento: %.2f\n", comprimento);
+}
 
-// void exercicio20()
-// {
+void exercicio19() {
+    float V, R, I;
+    printf("\nExercicio 19\n");
+    printf("Digite a tensao (V) e a resistencia (R): ");
+    scanf("%f %f", &V, &R);
 
-// }
+    I = V / R;
+    printf("Corrente eletrica: %.2f A\n", I);
+}
 
-// void exercicio21()
-// {
+void exercicio20() {
+    float a, b, h;
+    printf("\nExercicio 20\n");
+    printf("Digite os catetos: ");
+    scanf("%f %f", &a, &b);
 
-// }
+    h = sqrt(a*a + b*b);
+    printf("Hipotenusa: %.2f\n", h);
+}
 
-// void exercicio22()
-// {
+void exercicio21() {
+    float largura, comprimento, area, potencia;
+    printf("\nExercicio 21\n");
+    printf("Digite largura e comprimento (em metros): ");
+    scanf("%f %f", &largura, &comprimento);
 
-// }
+    area = largura * comprimento;
+    potencia = area * 18;
 
-// void exercicio23()
-// {
+    printf("Area: %.2f m2\n", area);
+    printf("Potencia necessaria: %.2f W\n", potencia);
+}
 
-// }
+void exercicio22() {
+    float a, b, c;
+    printf("\nExercicio 22\n");
+    printf("Digite dois angulos: ");
+    scanf("%f %f", &a, &b);
+
+    c = 180 - (a + b);
+    printf("Terceiro angulo: %.2f\n", c);
+}
+
+void exercicio23() {
+    int N, diagonais;
+    printf("\nExercicio 23\n");
+    printf("Digite o numero de lados: ");
+    scanf("%d", &N);
+
+    diagonais = N * (N - 3) / 2;
+    printf("Numero de diagonais: %d\n", diagonais);
+}
 
 // void exercicio24()
 // {
@@ -339,14 +387,14 @@ int main() {
             case 13: exercicio13(); break;
             case 14: exercicio14(); break;
             case 15: exercicio15(); break;
-            // case 16: exercicio16(); break;
-            // case 17: exercicio17(); break;
-            // case 18: exercicio18(); break;
-            // case 19: exercicio19(); break;
-            // case 20: exercicio20(); break;
-            // case 21: exercicio21(); break;
-            // case 22: exercicio22(); break;
-            // case 23: exercicio23(); break;
+            case 16: exercicio16(); break;
+            case 17: exercicio17(); break;
+            case 18: exercicio18(); break;
+            case 19: exercicio19(); break;
+            case 20: exercicio20(); break;
+            case 21: exercicio21(); break;
+            case 22: exercicio22(); break;
+            case 23: exercicio23(); break;
             // case 24: exercicio24(); break;
             // case 25: exercicio25(); break;
             // case 26: exercicio26(); break;
