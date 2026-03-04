@@ -160,8 +160,7 @@ void exercicio10()
 
 void exercicio11()
 {
-    float salario_minimo, salario;
-    int calculo;
+    float salario_minimo, salario, calculo;
 
     printf("Digite o valor do salario minimo atualmente: ");
     scanf("%f",&salario_minimo);
@@ -240,8 +239,9 @@ void exercicio15()
 }
 
 void exercicio16() {
+
     int a, b;
-    printf("\nExercicio 16\n");
+
     printf("Digite dois numeros inteiros: ");
     scanf("%d %d", &a, &b);
 
@@ -250,20 +250,22 @@ void exercicio16() {
 }
 
 void exercicio17() {
+
     float f, c;
-    printf("\nExercicio 17\n");
+
     printf("Digite a temperatura em Fahrenheit: ");
     scanf("%f", &f);
 
     c = (f - 32) / 1.8;
+
     printf("Temperatura em Celsius: %.2f\n", c);
 }
 
 void exercicio18() {
+
     float raio, area, comprimento;
     float pi = 3.14159;
 
-    printf("\nExercicio 18\n");
     printf("Digite o raio: ");
     scanf("%f", &raio);
 
@@ -275,18 +277,21 @@ void exercicio18() {
 }
 
 void exercicio19() {
+
     float V, R, I;
-    printf("\nExercicio 19\n");
+
     printf("Digite a tensao (V) e a resistencia (R): ");
     scanf("%f %f", &V, &R);
 
     I = V / R;
+
     printf("Corrente eletrica: %.2f A\n", I);
 }
 
 void exercicio20() {
+
     float a, b, h;
-    printf("\nExercicio 20\n");
+
     printf("Digite os catetos: ");
     scanf("%f %f", &a, &b);
 
@@ -295,8 +300,9 @@ void exercicio20() {
 }
 
 void exercicio21() {
+
     float largura, comprimento, area, potencia;
-    printf("\nExercicio 21\n");
+
     printf("Digite largura e comprimento (em metros): ");
     scanf("%f %f", &largura, &comprimento);
 
@@ -308,59 +314,161 @@ void exercicio21() {
 }
 
 void exercicio22() {
+
     float a, b, c;
-    printf("\nExercicio 22\n");
+
     printf("Digite dois angulos: ");
     scanf("%f %f", &a, &b);
 
     c = 180 - (a + b);
+
     printf("Terceiro angulo: %.2f\n", c);
 }
 
 void exercicio23() {
+
     int N, diagonais;
-    printf("\nExercicio 23\n");
+
     printf("Digite o numero de lados: ");
     scanf("%d", &N);
 
     diagonais = N * (N - 3) / 2;
+
     printf("Numero de diagonais: %d\n", diagonais);
 }
 
-// void exercicio24()
-// {
+void exercicio24()
+{
+    float raio, volume, altura;
 
-// }
+    printf("Digite o valor do raio: ");
+    scanf("%f", &raio);
 
-// void exercicio25()
-// {
+    printf("Digite o valor da altura: ");
+    scanf("%f", &altura);
 
-// }
+    volume = ((3.14159 * (raio * raio)) * altura);
 
-// void exercicio26()
-// {
+    printf("O volume da lata cilindrica eh: %.2f \n", volume);
+}
 
-// }
+void exercicio25()
+{
+    int hora,minutos, hora_conv_min, minutos_totais, segundos_totais;
 
-// void exercicio27()
-// {
+    printf("Digite uma hora a hora: ");
+    scanf("%d", &hora);
 
-// }
+    printf("Digite os minutos: ");
+    scanf("%d", &minutos);
 
-// void exercicio28()
-// {
+    hora_conv_min = hora * 60;
+    minutos_totais = ((hora * 60) + minutos);
+    segundos_totais = minutos_totais * 60;
 
-// }
+    printf("Hora convertida em minutos: %d \n", hora_conv_min);
+    printf("Total de minutos: %d \n", minutos_totais);
+    printf("Total de segundos: %d \n", segundos_totais);
+}
 
-// void exercicio29()
-// {
+void exercicio26()
+{
+    int alfa, beta, gama, troca;
 
-// }
+    printf("Digite o valor de alfa: ");
+    scanf("%d", &alfa);
 
-// void exercicio30()
-// {
+    printf("Digite o valor de beta: ");
+    scanf("%d", &beta);
 
-// }
+    printf("Digite o valor de gama: ");
+    scanf("%d", &gama);
+
+    printf("Antes da troca: Alfa = %d, Beta = %d, Gama = %d \n", alfa, beta, gama);
+
+    troca = alfa;
+    alfa = beta;
+    beta = gama;
+    gama = troca;
+
+    printf("Depois da troca: Alfa = %d, Beta = %d, Gama = %d \n", alfa, beta, gama);
+}
+
+void exercicio27()
+{
+    int nota1, nota2, nota3, nota4, media;
+
+    printf("Digite a nota 1: ");
+    scanf("%d", &nota1);
+
+    printf("Digite a nota 2: ");
+    scanf("%d", &nota2);
+
+    printf("Digite a nota 3: ");
+    scanf("%d", &nota3);
+
+    printf("Digite a nota 4: ");
+    scanf("%d", &nota4);
+
+    media = ((nota1 * 1) + (nota2 * 2) + (nota3 * 3) + (nota4 * 4)) / 10;
+
+    printf("Media final: %d", media);
+}
+
+void exercicio28()
+{
+    float tempo, velocidade, distancia, litros;
+
+    printf("Digite o tempo da viagem: ");
+    scanf("%f", &tempo);
+
+    printf("Digite a velocidade media durante a viagem: ");
+    scanf("%f", &velocidade);
+
+    distancia = (tempo * velocidade);
+    litros = (distancia / 12);
+
+    printf("A distancia percorrida foi de: %f \n", distancia);
+    printf("A quantidade de litros usados foi de: %.2f", litros);
+}
+
+void exercicio29()
+{
+    float salario, conta1, conta2, resto;
+
+    printf("Digite o valor do salario: ");
+    scanf("%f", &salario);
+
+    printf("Digite o valor da primeira conta atrasada: ");
+    scanf("%f", &conta1);
+
+    printf("Digite o valor da segunda conta atrasada: ");
+    scanf("%f", &conta2);
+
+    conta1 = (conta1 * 1.02);
+    conta2 = (conta2 * 1.02);
+
+    resto = (salario - (conta1 + conta2));
+
+    printf("Vai restar %.2f do seu salario \n", resto);
+}
+
+void exercicio30()
+{
+    float resistencia1, resistencia2, serie, paralelo;
+
+    printf("Digite o valor da resistencia 1 (em ohms): ");
+    scanf("%f", &resistencia1);
+
+    printf("Digite o valor da resistencia 2 (em ohms): ");
+    scanf("%f", &resistencia2);
+
+    serie = (resistencia1 + resistencia2);
+    paralelo = ((resistencia1 * resistencia2) / (resistencia1 + resistencia2));
+
+    printf("Valor da resistencia em serie: %.2f \n", serie);
+    printf("Valor da resistencia em paralelo: %.2f \n", paralelo);
+}
 
 
 int main() {
@@ -395,13 +503,13 @@ int main() {
             case 21: exercicio21(); break;
             case 22: exercicio22(); break;
             case 23: exercicio23(); break;
-            // case 24: exercicio24(); break;
-            // case 25: exercicio25(); break;
-            // case 26: exercicio26(); break;
-            // case 27: exercicio27(); break;
-            // case 28: exercicio28(); break;
-            // case 29: exercicio29(); break;
-            // case 30: exercicio30(); break;
+            case 24: exercicio24(); break;
+            case 25: exercicio25(); break;
+            case 26: exercicio26(); break;
+            case 27: exercicio27(); break;
+            case 28: exercicio28(); break;
+            case 29: exercicio29(); break;
+            case 30: exercicio30(); break;
         }
     } while (op != 0);
 
